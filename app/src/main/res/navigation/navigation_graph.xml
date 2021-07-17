@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/listNewsFragment">
+
+    <fragment
+        android:id="@+id/listNewsFragment"
+        android:name="br.com.ceccon.andre.ui.home.ListNewsFragment"
+        android:label="@string/title_List_news"
+        tools:layout="@layout/list_news_fragment">
+
+        <action
+            android:id="@+id/action_listNewsFragment_to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment"
+            app:popUpTo="@id/listNewsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="br.com.ceccon.andre.ui.articledetails.ArticleDetailsFragment"
+        android:label="@string/title_article_details"
+        tools:layout="@layout/article_details_fragment">
+
+        <argument
+            android:name="articleItem"
+            app:argType="br.com.ceccon.andre.data.model.Article" />
+
+        <action
+            android:id="@+id/action_articleDetailsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="br.com.ceccon.andre.ui.articledetails.WebViewFragment"
+        android:label="@string/title_web_view"
+        tools:layout="@layout/fragment_web_view">
+
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+</navigation>

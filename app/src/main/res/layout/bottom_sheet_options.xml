@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSavePhoto"
+        style="@style/BottomSheetItem"
+        android:text="Salvar a foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShareArticle"
+        style="@style/BottomSheetItem"
+        android:text="Compartilhar link do artigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSavePhoto" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSharePhoto"
+        style="@style/BottomSheetItem"
+        android:layout_marginTop="8dp"
+        android:text="Compartilhar Foto desse artigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShareArticle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

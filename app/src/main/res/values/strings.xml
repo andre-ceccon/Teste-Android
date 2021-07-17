@@ -1,0 +1,27 @@
+<resources>
+    <string name="title_List_news">News</string>
+    <string name="title_web_view">News at source</string>
+    <string name="title_article_details">News Details</string>
+    <string name="app_name">Teste André Ceccon - PremierSoft</string>
+
+    <!-- ListNews and Details-->
+    <string name="label_share">Share</string>
+    <string name="label_source">Source</string>
+    <string name="label_content">Content</string>
+    <string name="label_title_news_item">Title</string>
+    <string name="label_description">Description</string>
+    <string name="label_author_news_item">Author</string>
+    <string name="loading_text">Carregando as Notícias</string>
+    <string name="label_open_article">Open the article</string>
+    <string name="details_image_article">Imagem do artigo</string>
+    <string name="desc_without_connetion">Sem conexão com a internet!</string>
+    <string name="desc_error_refresh">Não foi possivel consultar os dados!</string>
+    <string name="desc_without_connection_and_items">Sem conexão com a internet e sem notícias no dispositivo</string>
+
+    <!-- Permission -->
+    <string name="error_permission">Erro solicitar permissão: </string>
+    <string name="hint_negativeButton_dialogPermissao">Agora não</string>
+    <string name="title_dialog_permissao_negada">Permissão necessária</string>
+    <string name="hint_possitiveButton_dialogPermissao">Ir para configuração</string>
+    <string name="Need_storage_permission">Permissão de armazenamento é necessária para continuar</string>
+</resources>

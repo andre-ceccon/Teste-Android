@@ -1,0 +1,2 @@
+rootProject.name = "Teste André Ceccon- PremierSoft"
+include ':app'
